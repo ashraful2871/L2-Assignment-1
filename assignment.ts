@@ -8,10 +8,6 @@
     }
   }
 
-  //   console.log(formatString("Hello")); // Output: "HELLO"
-  //   console.log(formatString("Hello", true)); // Output: "HELLO"
-  //   console.log(formatString("Hello", false)); // Output: "hello"
-
   function filterByRating(
     items: { title: string; rating: number }[]
   ): { title: string; rating: number }[] {
@@ -26,8 +22,6 @@
     { title: "Book E", rating: 9.0 },
   ];
 
-  //   console.log(filterByRating(books));
-
   function concatenateArrays<T>(...arrays: T[][]): T[] {
     let result: T[] = [];
     for (const array of arrays) {
@@ -35,12 +29,6 @@
     }
     return result;
   }
-
-  // console.log(concatenateArrays(["a", "b"], ["c"]));
-  // // Output: ["a", "b", "c"]
-
-  // console.log(concatenateArrays([1, 2], [3, 4], [5]));
-  // // Output: [1, 2, 3, 4, 5]
 
   class Vehicle {
     private make: string;
@@ -65,9 +53,6 @@
       return `Model: ${this.model}`;
     }
   }
-  // const myCar = new Car("Toyota", 2020, "Corolla");
-  // console.log(myCar.getInfo()); // Output: "Make: Toyota, Year: 2020"
-  // console.log(myCar.getModel()); // Output: "Model: Corolla"
 
   function processValue(value: string | number): number {
     if (typeof value === "string") {
@@ -77,11 +62,6 @@
       return multiNumber;
     }
   }
-
-  // const result1 = processValue("hello"); // Output: 5
-  // const result2 = processValue(10); // Output: 20
-  // console.log(result1);
-  // console.log(result2);
 
   interface Product {
     name: string;
@@ -103,15 +83,6 @@
     return highestPrise;
   }
 
-  // const products = [
-  //   { name: "Pen", price: 10 },
-  //   { name: "Notebook", price: 25 },
-  //   { name: "Bag", price: 50 },
-  // ];
-
-  // console.log(getMostExpensiveProduct(products));
-  // // Output: { name: "Bag", price: 50 }
-
   enum Day {
     Monday,
     Tuesday,
@@ -130,9 +101,6 @@
     }
   }
 
-  // console.log(getDayType(Day.Monday)); // Output: "Weekday"
-  // console.log(getDayType(Day.Sunday)); // Output: "Weekend"
-
   async function squareAsync(n: number): Promise<number> {
     return new Promise((resolve, reject) => {
       setTimeout(() => {
@@ -144,7 +112,6 @@
       }, 1000);
     });
   }
-  // squareAsync(4).then(console.log); // Output after 1s: 16
-  // squareAsync(-3).catch(console.error); // Output: Error: Negative number not allowed
+
   //
 }
