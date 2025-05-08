@@ -1,5 +1,3 @@
-# TypeScript: Understanding `any`, `unknown`, `never`, and `keyof`
-
 ## 1. Explain the difference between `any`, `unknown`, and `never` types in TypeScript.
 
 - **`any`**:
